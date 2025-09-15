@@ -25,7 +25,7 @@ spring:
       mode: always
 
 server:
-  port: 8088
+  port: 0
 
 springdoc:
   api-docs:

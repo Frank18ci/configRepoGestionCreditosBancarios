@@ -21,9 +21,16 @@ springdoc:
   api-docs:
     path: /api-docs
   swagger-ui:
-    path: /swagger-ui.html
-    operationsSorter: method
-    tagsSorter: alpha
+    urls:
+      - name: clientes
+        url: /servicioclientes/v3/api-docs
+      - name: prestamos
+        url: /servicioprestamos/v3/api-docs
+      - name: transacciones
+        url: /serviciotransacciones/v3/api-docs
+      - name: cuentas
+        url: /serviciocuentas/v3/api-docs
+        
 management:
   endpoints:
     web:

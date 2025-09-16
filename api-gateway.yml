@@ -17,6 +17,13 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:9000/realms/GestionCreditosBancarios
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    tagsSorter: alpha
 management:
   endpoints:
     web:

@@ -23,14 +23,14 @@ springdoc:
   swagger-ui:
     urls:
       - name: clientes
-        url: /servicioclientes/v3/api-docs
+        url: /servicioclientes/api-docs
       - name: prestamos
-        url: /servicioprestamos/v3/api-docs
+        url: /servicioprestamos/api-docs
       - name: transacciones
-        url: /serviciotransacciones/v3/api-docs
+        url: /serviciotransacciones/api-docs
       - name: cuentas
-        url: /serviciocuentas/v3/api-docs
-        
+        url: /serviciocuentas/api-docs
+
 management:
   endpoints:
     web:

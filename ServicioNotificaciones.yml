@@ -24,6 +24,19 @@ spring:
     init:
       mode: always
 
+  mail:
+    host: ${EMAIL_HOST}
+    port: ${EMAIL_PORT}
+    username: ${EMAIL_USERNAME}
+    password: ${EMAIL_PASSWORD}
+    properties:
+        mail:
+            smtp:
+              auth: true
+              starttls:
+                  enable: true
+            timeout: 5000
+
 server:
   port: 8089
 

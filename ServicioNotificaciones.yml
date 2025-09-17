@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5444/db_notificaciones
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9000/realms/GestionCreditosBancarios
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    # Para cargar data.sql al inicio
+    defer-datasource-initialization: true
+
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8089
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    tagsSorter: alpha
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/

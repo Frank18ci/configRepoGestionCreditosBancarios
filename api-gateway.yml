@@ -30,7 +30,8 @@ springdoc:
         url: /serviciotransacciones/api-docs
       - name: cuentas
         url: /serviciocuentas/api-docs
-
+      - name: notificaciones
+        url: /servicionotificaciones/api-docs
 management:
   endpoints:
     web:
